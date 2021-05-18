@@ -59,10 +59,10 @@ def play():
         roll = input().lower().capitalize()
         if roll == "Yes":
             play()
-        else:
-            print("It was nice playing with you. See you again.")
+        elif roll == "No":
+            print("Thanks for playing. See you again!!!")
             time.sleep(1)
             break
-
-
+        else:
+            print("Please enter a valid response.\nDo you want to continue?(yes/no)")
 play()
